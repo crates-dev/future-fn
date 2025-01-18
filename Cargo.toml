@@ -1,0 +1,19 @@
+[package]
+name = "async-func"
+version = "0.0.1"
+edition = "2021"
+authors = ["ltpp-universe <root@ltpp.vip>"] 
+license = "MIT"
+description = """A Rust library providing macros to simplify the creation of asynchronous closures with external state captured by move. Useful for structuring asynchronous code with ease and clarity."""
+keywords = ["standard", "macro", "extensions", "structures", "simplifying"]
+repository = "https://github.com/ltpp-universe/async-func"
+categories = ["data-structures", "development-tools"]
+exclude = [
+    "target",
+    "Cargo.lock",
+    "sh",
+    ".github"
+]
+
+[dependencies]
+tokio = { version = "1.43.0", features = ["full"] }
