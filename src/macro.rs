@@ -17,6 +17,16 @@
 /// task with a specified closure.
 #[macro_export]
 macro_rules! async_func {
+    ($($var:ident),*, { $($closure_body:tt)* }) => {
+         || {
+            #[allow(unused_parens)]
+            let ($($var),*) = ($($var.clone()),*);
+            async move {
+                $($closure_body)*
+            }
+        }
+    };
+
     ($($var:ident),*, |$($closure_param:ident),*| { $($closure_body:tt)* }) => {
         move |$($closure_param),*| {
             #[allow(unused_parens)]
