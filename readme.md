@@ -3,6 +3,7 @@
 # async-func
 
 [![](https://img.shields.io/crates/v/async-func.svg)](https://crates.io/crates/async-func)
+[![](https://img.shields.io/crates/d/async-func.svg)](https://img.shields.io/crates/d/async-func.svg)
 [![](https://docs.rs/async-func/badge.svg)](https://docs.rs/async-func)
 [![](https://github.com/ltpp-universe/async-func/workflows/Rust/badge.svg)](https://github.com/ltpp-universe/async-func/actions?query=workflow:Rust)
 [![](https://img.shields.io/crates/l/async-func.svg)](./LICENSE)
