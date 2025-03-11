@@ -1,6 +1,6 @@
 [package]
 name = "async-func"
-version = "0.1.7"
+version = "0.1.8"
 edition = "2021"
 authors = ["ltpp-universe <root@ltpp.vip>"] 
 license = "MIT"
@@ -16,7 +16,7 @@ exclude = [
 ]
 
 [dependencies]
-tokio = { version = "1.43.0", features = ["full"] }
+tokio = { version = "1.44.0", features = ["full"] }
 
 [profile.dev]
 incremental = false
