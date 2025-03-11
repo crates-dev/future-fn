@@ -1,6 +1,6 @@
 [package]
 name = "async-func"
-version = "0.1.6"
+version = "0.1.7"
 edition = "2021"
 authors = ["ltpp-universe <root@ltpp.vip>"] 
 license = "MIT"
@@ -26,7 +26,6 @@ panic = "unwind"
 debug = false
 codegen-units = 1
 strip = "debuginfo"
-backtrace = "off"
 
 [profile.release]
 incremental = false
@@ -36,4 +35,3 @@ panic = "unwind"
 debug = false
 codegen-units = 1
 strip = "debuginfo"
-backtrace = "off"
