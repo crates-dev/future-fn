@@ -16,7 +16,7 @@
 /// This macro allows you to encapsulate external state (captured via cloning) and run an asynchronous
 /// task with a specified closure.
 #[macro_export]
-macro_rules! async_func {
+macro_rules! future_fn {
     ($($var:ident),*, { $($closure_body:tt)* }) => {
         || {
             #[allow(unused_parens)]

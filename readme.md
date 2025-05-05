@@ -1,48 +1,48 @@
 <center>
 
-# async-func
+# future-fn
 
-[![](https://img.shields.io/crates/v/async-func.svg)](https://crates.io/crates/async-func)
-[![](https://img.shields.io/crates/d/async-func.svg)](https://img.shields.io/crates/d/async-func.svg)
-[![](https://docs.rs/async-func/badge.svg)](https://docs.rs/async-func)
-[![](https://github.com/ltpp-universe/async-func/workflows/Rust/badge.svg)](https://github.com/ltpp-universe/async-func/actions?query=workflow:Rust)
-[![](https://img.shields.io/crates/l/async-func.svg)](./LICENSE)
+[![](https://img.shields.io/crates/v/future-fn.svg)](https://crates.io/crates/future-fn)
+[![](https://img.shields.io/crates/d/future-fn.svg)](https://img.shields.io/crates/d/future-fn.svg)
+[![](https://docs.rs/future-fn/badge.svg)](https://docs.rs/future-fn)
+[![](https://github.com/ltpp-universe/future-fn/workflows/Rust/badge.svg)](https://github.com/ltpp-universe/future-fn/actions?query=workflow:Rust)
+[![](https://img.shields.io/crates/l/future-fn.svg)](./LICENSE)
 
 </center>
 
-[Official Documentation](https://docs.ltpp.vip/async-func/)
+[Official Documentation](https://docs.ltpp.vip/future-fn/)
 
 > A Rust library providing macros to simplify the creation of asynchronous closures with external state captured by move. Useful for structuring asynchronous code with ease and clarity.
 
 ## Installation
 
-To install `async-func` run cmd:
+To install `future-fn` run cmd:
 
 ```sh
-cargo add async-func
+cargo add future-fn
 ```
 
 ## Usage
 
 ```rust
-use async_func::*;
+use future_fn::*;
 
 let string: String = String::from("test");
 let number: i32 = 1;
-let func = async_func!(string, number, {
+let future_fn = future_fn!(string, number, {
     let tmp_string: String = String::from("test");
     assert_eq!(string, tmp_string);
     assert_eq!(number, 1);
 });
-func().await;
+future_fn().await;
 
-let func = async_func!(string, number, |data| {
+let future_fn = future_fn!(string, number, |data| {
     let tmp_string: String = String::from("test");
     assert_eq!(string, tmp_string);
     assert_eq!(data, 1);
     assert_eq!(number, 1);
 });
-func(1).await;
+future_fn(1).await;
 ```
 
 ## License
