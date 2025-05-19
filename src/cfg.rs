@@ -1,3 +1,4 @@
+#[cfg(test)]
 #[tokio::test]
 async fn test() {
     use crate::*;

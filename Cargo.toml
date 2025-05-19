@@ -1,6 +1,6 @@
 [package]
 name = "future-fn"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2024"
 authors = ["ltpp-universe <root@ltpp.vip>"] 
 license = "MIT"
@@ -15,7 +15,7 @@ exclude = [
     ".github"
 ]
 
-[dependencies]
+[dev-dependencies]
 tokio = { version = "1.45.0", features = ["full"] }
 
 [profile.dev]
