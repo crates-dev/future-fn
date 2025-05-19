@@ -27,12 +27,14 @@ macro_rules! future_fn {
         }
     };
 
-    ($($var:ident),*, |$($closure_param:ident),*| { $($closure_body:tt)* }) => {
-        move |$($closure_param),*| {
+    ($($var:ident),*, |$( $closure_param:ident $(: $closure_param_ty:ty)? ),*| { $($closure_body:tt)* }) => {
+        {
             #[allow(unused_parens)]
             let ($($var),*) = ($($var.clone()),*);
-            async move {
-                $($closure_body)*
+            move |$( $closure_param $(: $closure_param_ty)? ),*| {
+                async move {
+                    $($closure_body)*
+                }
             }
         }
     };
