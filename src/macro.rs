@@ -32,6 +32,7 @@ macro_rules! future_fn {
             #[allow(unused_parens)]
             let ($($var),*) = ($($var.clone()),*);
             move |$( $closure_param $(: $closure_param_ty)? ),*| {
+                let ($($var),*) = ($($var.clone()),*);
                 async move {
                     $($closure_body)*
                 }
