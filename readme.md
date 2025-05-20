@@ -5,7 +5,7 @@
 [![](https://img.shields.io/crates/v/future-fn.svg)](https://crates.io/crates/future-fn)
 [![](https://img.shields.io/crates/d/future-fn.svg)](https://img.shields.io/crates/d/future-fn.svg)
 [![](https://docs.rs/future-fn/badge.svg)](https://docs.rs/future-fn)
-[![](https://github.com/ltpp-universe/future-fn/workflows/Rust/badge.svg)](https://github.com/ltpp-universe/future-fn/actions?query=workflow:Rust)
+[![](https://github.com/eastspire/future-fn/workflows/Rust/badge.svg)](https://github.com/eastspire/future-fn/actions?query=workflow:Rust)
 [![](https://img.shields.io/crates/l/future-fn.svg)](./LICENSE)
 
 </center>
@@ -77,4 +77,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## Contact
 
-For any inquiries, please reach out to the author at [ltpp-universe <root@ltpp.vip>](mailto:root@ltpp.vip).
+For any inquiries, please reach out to the author at [eastspire <root@ltpp.vip>](mailto:root@ltpp.vip).
