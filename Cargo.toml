@@ -1,13 +1,13 @@
 [package]
 name = "future-fn"
-version = "0.3.2"
+version = "0.3.3"
 readme = "README.md"
 edition = "2024"
 authors = ["root@ltpp.vip"]
 license = "MIT"
 description = """A Rust library providing macros to simplify the creation of asynchronous closures with external state captured by move. Useful for structuring asynchronous code with ease and clarity."""
 keywords = ["standard", "macro", "extensions", "structures", "simplifying"]
-repository = "https://github.com/eastspire/future-fn"
+repository = "https://github.com/crates-dev/future-fn"
 categories = ["data-structures", "development-tools"]
 exclude = [
     "target",
