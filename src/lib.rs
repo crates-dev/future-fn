@@ -4,8 +4,12 @@
 //! asynchronous closures with external state captured by move.
 //! Useful for structuring asynchronous code with ease and clarity.
 
-pub(crate) mod cfg;
 pub(crate) mod r#macro;
 
-#[allow(unused_imports)]
-pub use r#macro::*;
+#[cfg(test)]
+mod test;
+
+#[cfg(test)]
+pub(crate) use std::time::Duration;
+#[cfg(test)]
+pub(crate) use tokio::time::sleep;

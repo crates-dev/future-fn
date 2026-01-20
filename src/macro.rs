@@ -14,7 +14,6 @@ macro_rules! future_fn {
             }
         }
     };
-
     ($($var:ident),*, |$( $closure_param:ident $(: $closure_param_ty:ty)? ),*| { $($closure_body:tt)* }) => {
         {
             #[allow(unused_parens)]

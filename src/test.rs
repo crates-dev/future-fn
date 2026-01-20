@@ -1,10 +1,7 @@
-#[cfg(test)]
+use crate::*;
+
 #[tokio::test]
 async fn test() {
-    use crate::*;
-    use std::time::Duration;
-    use tokio::time::sleep;
-
     let string: String = String::from("test");
     let number: i32 = 1;
     let future_fn = future_fn!(string, number, {
