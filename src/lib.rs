@@ -5,11 +5,3 @@
 //! Useful for structuring asynchronous code with ease and clarity.
 
 mod r#macro;
-#[cfg(test)]
-mod test;
-
-#[cfg(test)]
-use std::time::Duration;
-
-#[cfg(test)]
-use tokio::time::sleep;
