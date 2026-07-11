@@ -1,6 +1,6 @@
 [package]
 name = "future-fn"
-version = "0.3.20"
+version = "0.3.21"
 readme = "README.md"
 edition = "2024"
 authors = ["root@ltpp.vip"]
